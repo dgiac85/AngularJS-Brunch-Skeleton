@@ -1,4 +1,4 @@
-AngularJS-Skeleton
+AngularJS-Brunch-Skeleton
 ==================
 
 Simplest possible AngularJS skeleton with AngularJS v1.2.6 and jQuery 2.0.2.
@@ -7,19 +7,23 @@ WARNING: Before installing application, you have to update node.js. Here the lin
 Install the current version. If you do not install one of the last node's versions, some dipendences can generate errors
 
 
-## Brunch for development management
-After Node installation, execute following commands
+# Brunch for development management
+After Node installation, execute following commands:
 
 	npm install  
 	npm install -g brunch
 
-Then execute
+And then to install bower dependencies:
+
+	bower install
+
+Then execute:
 	brunch watch --server
 
 to host the application on a virtual server and to benefit of livereload during the development of code. The above command starts the application on address 127.0.0.1:8080/skeletonApp
 
 
-## Brunch building management
+# Brunch building management
 The following commands execute this functions:
 
 For development:
