@@ -13,17 +13,22 @@ After Node installation, execute following commands
 	npm install  
 	npm install -g brunch
 
-Then execute 'brunch watch --server' to host the application on a virtual server and to benefit of livereload during the development of code. The above command starts the application on address 127.0.0.1:8080/skeletonApp
+Then execute
+	brunch watch --server
+
+to host the application on a virtual server and to benefit of livereload during the development of code. The above command starts the application on address 127.0.0.1:8080/skeletonApp
 
 
 ## Brunch building management
 The following commands execute this functions:
 
 For development:
-'brunch build': it does not minify, prepares and copies all things in a folder named "public", in dev modality. After this command it needs to execute the 'brunch watch --server' command
-Per lo sviluppo:
-`brunch build`:  non minifica, prepara e copia tutto in una cartella "public", con la struttura dell’applicazione in modalità sviluppo. Dopo aver eseguito questo comando digitate brunch watch --server per far partire l’applicazione sull’indirizzo 127.0.0.1:8080/gui.
-Su index.html ci sono i riferimenti a tutti gli scripts non minificati.
 
-Per la produzione:
-`brunch build -p`: è il task utile a creare una cartella "public" di produzione. uglifica, concatena ecc ecc. Digitando brunch wattch --server caricherete sempre l’applicazione all’indirizzo 127.0.0.1:8081, ma con i codici tutti minificati.
+	brunch build
+it does not minify, prepares and copies all things in a folder named "public", in dev modality. After this command it needs to execute the 'brunch watch --server' command. 8080 is the default port.
+
+For production:
+
+	brunch build -p
+
+this task is useful to create a public production folder. It ugliefies, minifies etc etc. Copy this folder in a server folder (e.g. Tomcat webapps folder)
