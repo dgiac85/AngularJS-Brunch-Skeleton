@@ -43,7 +43,7 @@ For production:
 
 this task is useful to create a public production folder. It ugliefies, minifies etc etc. Copy this folder in a server folder (e.g. Tomcat webapps folder)
 
-## Gulp for development and building management.
+## Using Gulp for development and building management.
 
 To create a dist folder for developemt:
 
