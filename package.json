@@ -2,11 +2,34 @@
   "name": "AngularJSSkeletonBrunch",
   "private": true,
   "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "es6-promise": "^3.2.1",
+    "extfs": "0.0.7",
+
     "javascript-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "uglify-js-brunch": "^2.0.0",
     "clean-css-brunch": "^2.0.0",
-    "auto-reload-brunch": "^2.0.0"
+    "auto-reload-brunch": "^2.0.0",
+
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-serve": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.6",
+    "gulp-webserver": "^0.9.1",
+    "gulp-open":"2.0.0"
   },
   "engines": {
     "node": ">=0.10.0"

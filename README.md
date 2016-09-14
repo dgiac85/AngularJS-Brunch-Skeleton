@@ -6,6 +6,15 @@ Simplest possible AngularJS skeleton with AngularJS v1.2.6 and jQuery 2.0.2.
 WARNING: Before installing application, you have to update node.js. Here the link to latest version: https://nodejs.org/en/.
 Install the current version. If you do not install one of the last node's versions, some dipendences can generate errors
 
+IMPORTANT: If you want to install some libraries with bower, first of all:
+
+	npm install -g bower
+
+And then:
+
+	bower install
+
+After you have installed a library, copy the js file in the libs folder (the same thing for css)
 
 # Brunch for development management
 After Node installation, execute following commands:
@@ -13,9 +22,6 @@ After Node installation, execute following commands:
 	npm install  
 	npm install -g brunch
 
-And then to install bower dependencies:
-
-	bower install
 
 Then execute:
 	brunch watch --server
@@ -36,3 +42,17 @@ For production:
 	brunch build -p
 
 this task is useful to create a public production folder. It ugliefies, minifies etc etc. Copy this folder in a server folder (e.g. Tomcat webapps folder)
+
+## Gulp for development and building management.
+
+To create a dist folder for developemt:
+
+	gulp
+
+To minify and uglify and create a dist folder for production:
+
+	gulp build
+
+To run application:
+
+	gulp serve

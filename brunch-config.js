@@ -5,7 +5,7 @@ module.exports = {
     javascripts: {
       joinTo: {
         'app.js':/^app/,
-        'vendor.js':/^vendor/
+        'vendor.js':/^app\/scripts\/libs\//
       },
       order: {
         before: [
